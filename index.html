@@ -11,14 +11,20 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Chanel Gabrielle</title>
   </head>
 
   <body>
-    <div id="first-container">
-      <img src="images\image-product-desktop.jpg" />
+    <main id="first-container">
+      <picture class="image">
+        <source
+          srcset="images\image-product-desktop.jpg"
+          media="(min-width: 768px)"
+        />
+        <img src="images\image-product-mobile.jpg" />
+      </picture>
 
       <div id="desc-container">
         <h1>Perfume</h1>
@@ -44,6 +50,6 @@
           Add to Cart
         </button>
       </div>
-    </div>
+    </main>
   </body>
 </html>
